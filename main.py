@@ -1,16 +1,15 @@
-# This is a sample Python script.
+# Main file of project with several exercises to improve skills on Python
 
 # Press Maj+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
+# Import files.
+from files import *
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    create_file('testing.txt')
+    write_file('testing.txt', 'Hello there!')
+    read_file('testing.txt')
+
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
