@@ -31,6 +31,6 @@ def search_in_file(name, text):
     for line in lines:
         count += 1
         if line.__contains__(text):
-            print("Looook!!! Line{}: {}".format(count, line.strip()))
+            print("Line{}: {}".format(count, line.strip()))
         else:
-            print('No chance by now')
+            print("Line{}: {}".format(count, "No chance."))

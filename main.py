@@ -7,11 +7,15 @@
 from files import *
 
 if __name__ == '__main__':
-    create_file('testing.txt')
-    write_file('testing.txt', 'Hello there!')
-    read_file('testing.txt')
 
-    search_in_file('testing.txt', 'Hello there!')
-    search_in_file('testing.txt', 'Po-ta-toes!')
+    response = input("Persons vaccinated or not ? ")
+
+    # Adapt input to standard word to be found in the csv file.
+    if response == 'yes' or response == 'YES' or response == 'Yes' or response == 'YEs':
+        response = 'Yes'
+    elif response == 'no' or response == 'NO' or response == 'nO' or response == 'No':
+        response = 'No'
+
+    search_in_file('persons.csv', response)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
