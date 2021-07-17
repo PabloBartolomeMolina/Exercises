@@ -20,3 +20,17 @@ def read_file(name):
     f = open(name, "r")
     print(f.read())
     f.close()
+
+
+def search_in_file(name, text):
+    f = open(name, "r")
+    lines = f.readlines()   # Get lines in the file.
+
+    count = 0
+    # Strips the newline character
+    for line in lines:
+        count += 1
+        if line.__contains__(text):
+            print("Looook!!! Line{}: {}".format(count, line.strip()))
+        else:
+            print('No chance by now')

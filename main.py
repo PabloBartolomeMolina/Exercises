@@ -11,5 +11,7 @@ if __name__ == '__main__':
     write_file('testing.txt', 'Hello there!')
     read_file('testing.txt')
 
+    search_in_file('testing.txt', 'Hello there!')
+    search_in_file('testing.txt', 'Po-ta-toes!')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
