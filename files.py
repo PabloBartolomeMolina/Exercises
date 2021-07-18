@@ -1,5 +1,6 @@
 # Functions to manipulate files
 
+import matplotlib.pyplot as plt
 import os.path
 
 
@@ -26,11 +27,27 @@ def search_in_file(name, text):
     f = open(name, "r")
     lines = f.readlines()   # Get lines in the file.
 
+    yes = 0
+    no = 0
     count = 0
     # Strips the newline character
     for line in lines:
         count += 1
-        if line.__contains__(text):
+        if line.__contains__('Yes'):
             print("Line{}: {}".format(count, line.strip()))
-        else:
+            yes += 1
+        elif line.__contains__('No'):
             print("Line{}: {}".format(count, "No chance."))
+            no += 1
+    # Print results
+    plot_search(yes, no)
+
+
+def plot_search(p1, p2):
+    t = [p1, p2]
+    plt.plot(t, 'ro')
+    names = ['yes', 'no']
+    plt.scatter(names, t)
+    plt.xlabel('Is people vaccinated ?')
+    plt.ylabel('Number of persons.')
+    plt.show()
