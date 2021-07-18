@@ -5,10 +5,10 @@ import os.path
 
 
 def create_file(name):
-    if not os.path.isfile(name):    # Create file only if not already existing.
-        f = open(name, "x")     # Returns error if already existing.
+    if not os.path.isfile(name):  # Create file only if not already existing.
+        f = open(name, "x")  # Returns error if already existing.
     else:
-        pass    # Nothing to be done if already existing.
+        pass  # Nothing to be done if already existing.
 
 
 def write_file(name, text):
@@ -25,7 +25,7 @@ def read_file(name):
 
 def search_in_file(name, text):
     f = open(name, "r")
-    lines = f.readlines()   # Get lines in the file.
+    lines = f.readlines()  # Get lines in the file.
 
     yes = 0
     no = 0
@@ -50,4 +50,17 @@ def plot_search(p1, p2):
     plt.scatter(names, t)
     plt.xlabel('Is people vaccinated ?')
     plt.ylabel('Number of persons.')
+    plt.show()
+
+
+def occurences(file):
+    f = open(file, "r")     # Open file
+    data = f.read()      # Get contents of the file
+
+    occurences_list = [[0] * i for i in range(100)]
+
+    for x in range(100):
+        occurences_list[x] = data.count(str(x))
+
+    plt.plot(occurences_list, 'ro')
     plt.show()
