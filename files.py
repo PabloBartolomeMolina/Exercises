@@ -53,14 +53,14 @@ def plot_search(p1, p2):
     plt.show()
 
 
-def occurences(file):
-    f = open(file, "r")     # Open file
-    data = f.read()      # Get contents of the file
+def occurrences(file):
+    f = open(file, "r")  # Open file
+    data = f.read()  # Get contents of the file
 
-    occurences_list = [[0] * i for i in range(100)]
+    occurrences_list = [[0] * i for i in range(100)]
 
     for x in range(100):
-        occurences_list[x] = data.count(str(x))
+        occurrences_list[x] = data.count(str(x))
 
-    plt.plot(occurences_list, 'ro')
+    plt.plot(occurrences_list, 'ro')
     plt.show()
