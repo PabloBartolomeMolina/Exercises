@@ -6,9 +6,10 @@
 # Import files.
 from files import *
 from alarms import *
+from cvManips import *
 
 if __name__ == '__main__':
-    alarm()
+    color_channels()
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
