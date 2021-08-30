@@ -23,5 +23,12 @@ def color_channels():
     k = cv.waitKey(0)
 
     px = 0
-    print(B.height)
-    print(B.width)
+    print(B[0].size)
+    img_special = np.zeros(img.shape[:2], dtype="uint8")
+
+    while px < B.size:
+        if R[px][0] > G[px][0]:
+            img_special[px] = R[px][0]
+        px = px + 1
+        if px == B[0].size:
+            break

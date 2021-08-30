@@ -6,10 +6,11 @@
 # Import files.
 from files import *
 from alarms import *
+from psrGame import *
 from cvManips import *
 
 if __name__ == '__main__':
-    color_channels()
+    game()
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
