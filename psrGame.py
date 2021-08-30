@@ -13,7 +13,7 @@ def game():
         # Computer is random
         computer = random.choice(list(options.values()))
 
-        player = input("Paper, Scissor, Rock ?")
+        player = input("Paper, Scissor, Rock ?  ")
         # Verify player's choice
         if player == options.get(1) or player == options.get(2) or player == options.get(3):
             valid = "Valid"
@@ -22,7 +22,7 @@ def game():
 
         while valid == "Invalid option":
             print("Invalid option. Chose again...")
-            player = input("Paper, Scissor, Rock ?")
+            player = input("Paper, Scissor, Rock ?  ")
             # Verify player's choice
             if player == options.get(1) or player == options.get(2) or player == options.get(3):
                 valid = "Valid"
@@ -41,3 +41,20 @@ def game():
             if not playerWon:   # Player has not a winning combination
                 print("You lost!")
                 print("Computer chosen " + computer)
+
+        play = input("\nDo you want to play more? (Y/N)...  ")
+        if play == "n" or play == "N":
+            print ("See you!!")
+            break
+        elif play == "y" or play == "Y":
+            playerWon = False   # Force to continue in the while loop
+        else:   # Anything else
+            while play != "y" and play != "Y" and play != "n" and play != "N":
+                play = input("\nDo you want to play more? (Y/N)...  ")
+                if play == "n" or play == "N":
+                    print("See you!!")
+                    break
+                elif play == "y" or play == "Y":
+                    playerWon = False  # Force to continue in the while loop
+            if play == "n" or play == "N":
+                break
