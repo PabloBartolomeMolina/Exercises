@@ -6,6 +6,22 @@ options = {1: "Paper", 2: "Scissor", 3: "Rock"}
 combinations = {"Scissor": "Paper", "Rock": "Scissor", "Paper": "Rock"}
 
 
+# Check if user's input corresponds to "yes" response
+def input_yes(play):
+    if play == "y" or play == "Y":
+        return True
+    else:
+        return False
+
+
+# Check if user's input corresponds to "no" response
+def input_no(play):
+    if play == "n" or play == "N":
+        return True
+    else:
+        return False
+
+
 def game():
     playerWon = False   # Initially, player has not yet won
 
@@ -43,18 +59,18 @@ def game():
                 print("Computer chosen " + computer)
 
         play = input("\nDo you want to play more? (Y/N)...  ")
-        if play == "n" or play == "N":
+        if input_no(play):
             print ("See you!!")
             break
-        elif play == "y" or play == "Y":
+        elif input_yes(play):
             playerWon = False   # Force to continue in the while loop
         else:   # Anything else
-            while play != "y" and play != "Y" and play != "n" and play != "N":
+            while not input_yes(play) and not input_no(play):
                 play = input("\nDo you want to play more? (Y/N)...  ")
                 if play == "n" or play == "N":
                     print("See you!!")
-                    break
-                elif play == "y" or play == "Y":
+                    breakSimplify
+                elif input_yes(play):
                     playerWon = False  # Force to continue in the while loop
-            if play == "n" or play == "N":
+            if input_no(play):
                 break
