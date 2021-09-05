@@ -69,7 +69,7 @@ def game():
                 play = input("\nDo you want to play more? (Y/N)...  ")
                 if play == "n" or play == "N":
                     print("See you!!")
-                    breakSimplify
+                    break
                 elif input_yes(play):
                     playerWon = False  # Force to continue in the while loop
             if input_no(play):
