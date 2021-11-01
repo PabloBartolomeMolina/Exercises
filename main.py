@@ -11,8 +11,7 @@ from cvManips import *
 from myMath import *
 
 if __name__ == '__main__':
-    fibonacci (15)
-    #game()
+    add_it_up(10)
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
