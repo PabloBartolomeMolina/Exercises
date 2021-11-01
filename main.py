@@ -8,9 +8,11 @@ from files import *
 from alarms import *
 from psrGame import *
 from cvManips import *
+from myMath import *
 
 if __name__ == '__main__':
-    game()
+    fibonacci (15)
+    #game()
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
