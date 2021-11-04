@@ -12,6 +12,19 @@ from myMath import *
 
 if __name__ == '__main__':
     add_it_up(10)
+    powered(5, 0)
+    powered(5, 1)
+    powered(5, 2)
+    powered(5, 3)
 
+    powered(2, 0)
+    powered(2, 1)
+    powered(2, 2)
+    powered(2, 3)
+
+    powered(3, 0)
+    powered(3, 1)
+    powered(3, 2)
+    powered(3, 3)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
