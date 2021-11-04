@@ -42,12 +42,17 @@ def squared_root(base):
     result = 1
 
     for guess in range(1, base):
-        if base / powered(guess, 2) > 1:
+        computed = base / powered(guess, 2)
+
+        if computed > 1:
             pass
-        else:
+        elif computed == 1:
             result = guess
             break
+        else:
+            result = guess - 1
+            break
 
-    print("Squared root is ", result)
-    print("Number to calculate squared root from is ", base)
+    print("Squared root is", result)
+    print("Number to calculate squared root from is", base)
     return result
