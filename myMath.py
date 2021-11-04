@@ -36,3 +36,18 @@ def powered(base, index):
             result = result * base
     print("Power is ", result)
     return result
+
+
+def squared_root(base):
+    result = 1
+
+    for guess in range(1, base):
+        if base / powered(guess, 2) > 1:
+            pass
+        else:
+            result = guess
+            break
+
+    print("Squared root is ", result)
+    print("Number to calculate squared root from is ", base)
+    return result

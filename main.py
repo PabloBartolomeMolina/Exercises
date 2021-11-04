@@ -11,20 +11,23 @@ from cvManips import *
 from myMath import *
 
 if __name__ == '__main__':
-    add_it_up(10)
-    powered(5, 0)
-    powered(5, 1)
-    powered(5, 2)
-    powered(5, 3)
-
-    powered(2, 0)
-    powered(2, 1)
-    powered(2, 2)
-    powered(2, 3)
-
-    powered(3, 0)
-    powered(3, 1)
-    powered(3, 2)
-    powered(3, 3)
+    n = 1
+    print("TEST NUMBER ", n)
+    squared_root(9)
+    n = n+1
+    print("\n\nTEST NUMBER ", n)
+    squared_root(1)
+    n = n + 1
+    print("\n\nTEST NUMBER ", n)
+    squared_root(4)
+    n = n + 1
+    print("\n\nTEST NUMBER ", n)
+    squared_root(27)
+    n = n + 1
+    print("\n\nTEST NUMBER ", n)
+    squared_root(100)
+    n = n + 1
+    print("\n\nTEST NUMBER ", n)
+    squared_root(10)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
