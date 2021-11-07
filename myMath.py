@@ -64,27 +64,27 @@ def squared_root(base):
         print("even")
         list_digits.append(str(base)[0])  # First digit
         for i in range(1, digits, 2):
-            list_digits.append(str(base)[i:i + 2])
+            list_digits.append(int(str(base)[i:i + 2]))
         pass
 
     print(list_digits)
-    '''
-    for guess in range(1, base):
-        computed = base / powered(guess, 2)
 
-        if computed > 1:
-            # Squared root should be bigger
-            pass
-        elif computed == 1:
-            # Exact result
-            result = guess
-            break
-        else:
-            result = guess - 1
-            flag_continue = 1
-            break
-            
-    print("Squared root is", result)
-    print("Number to calculate squared root from is", base)
-    '''
+    for i in range(len(list_digits)):
+        for guess in range(1, base):
+            computed = int(list_digits[i]) / powered(guess, 2)
+
+            if computed > 1:
+                # Squared root should be bigger
+                pass
+            elif computed == 1:
+                # Exact result
+                result = guess
+                break
+            else:
+                result = guess - 1
+                rest = int(list_digits[i]) - result*result
+                break
+
+        print("Squared root is", result)
+        print("Number to calculate squared root from is", base)
     return result
