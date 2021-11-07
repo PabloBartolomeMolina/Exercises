@@ -13,21 +13,26 @@ from myMath import *
 if __name__ == '__main__':
     n = 1
     print("TEST NUMBER ", n)
-    squared_root(9)
+    squared_root(6)
     n = n+1
-    print("\n\nTEST NUMBER ", n)
-    squared_root(1)
-    n = n + 1
-    print("\n\nTEST NUMBER ", n)
-    squared_root(4)
-    n = n + 1
-    print("\n\nTEST NUMBER ", n)
-    squared_root(27)
-    n = n + 1
-    print("\n\nTEST NUMBER ", n)
-    squared_root(100)
-    n = n + 1
+
     print("\n\nTEST NUMBER ", n)
     squared_root(10)
+    n = n + 1
+
+    print("\n\nTEST NUMBER ", n)
+    squared_root(1546)
+    n = n + 1
+
+    print("\n\nTEST NUMBER ", n)
+    squared_root(154689)
+    n = n + 1
+
+    print("\n\nTEST NUMBER ", n)
+    squared_root(121)
+    n = n + 1
+    print("\n\nTEST NUMBER ", n)
+    squared_root(12121)
+
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
