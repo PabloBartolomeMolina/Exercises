@@ -78,11 +78,16 @@ def squared_root(base):
                 pass
             elif computed == 1:
                 # Exact result
-                result = guess
+                if i == 0:
+                    result = guess
+                else:
+                    result = (result*10) + guess
                 break
             else:
-                result = guess - 1
-                rest = int(list_digits[i]) - result*result
+                if i == 0:
+                    result = (guess - 1)
+                else:
+                    result = (result * 10) + (guess - 1)
                 break
 
         print("Squared root is", result)
