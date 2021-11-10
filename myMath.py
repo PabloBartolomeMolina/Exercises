@@ -3,6 +3,7 @@ from typing import List, Any, Union
 import numpy as np
 import math
 
+
 def fibonacci(items):
     num_fibo: List[Union[int, Any]] = [0, 1]  # Basic Fibonacci sequence.
 
@@ -34,19 +35,20 @@ def powered(base, index):
         result = base
         for x in range(1, index):
             result = result * base
-    #print("Power is ", result)
+    # print("Power is ", result)
     return result
 
 
-'''
-Input : Number to calculate the squared root from.
-Margin : Precision for the result of the squared root calculation
-'''
-def squared_root(input, margin):
+def squared_root(base, margin):
+    """
+    Base : Number to calculate the squared root from.
+    Margin : Precision for the result of the squared root calculation
+    """
+    # To calculate the SQRT, estimations are done. Starting with value 1.0.
     estimated = 1.0
 
-    while abs(powered(estimated, 2) - input) >= margin:
-        result = input / estimated
+    while abs(powered(estimated, 2) - base) >= margin:
+        result = base / estimated
         med = (result + estimated) / 2.0;
         estimated = med
 
