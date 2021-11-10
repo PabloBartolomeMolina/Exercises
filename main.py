@@ -12,33 +12,32 @@ from myMath import *
 
 if __name__ == '__main__':
     n = 1
-    print("TEST NUMBER ", n)
+    print("TEST NUMBER ", n)                    # TEST 1
     result = squared_root(6, 0.0001)
     print("Result ", result)
     n = n+1
 
-    print("\n\nTEST NUMBER ", n)
+    print("\n\nTEST NUMBER ", n)                # TEST 2
     result = squared_root(10, 0.01)
     print("Result ", result)
     n = n + 1
 
-    print("\n\nTEST NUMBER ", n)
+    print("\n\nTEST NUMBER ", n)                # TEST 3
     result = squared_root(1546, 0.0001)
     print("Result ", result)
     n = n + 1
 
-    print("\n\nTEST NUMBER ", n)
+    print("\n\nTEST NUMBER ", n)                # TEST 4
     result = squared_root(154689, 0.000001)
     print("Result ", result)
     n = n + 1
 
-    print("\n\nTEST NUMBER ", n)
+    print("\n\nTEST NUMBER ", n)                # TEST 5
     result = squared_root(121, 1)
     print("Result ", result)
     n = n + 1
 
-
-    print("\n\nTEST NUMBER ", n)
+    print("\n\nTEST NUMBER ", n)                # TEST 6
     result = squared_root(12121, 0.0001)
     print("Result ", result)
 
