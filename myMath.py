@@ -2,7 +2,7 @@ from typing import List, Any, Union
 
 import numpy as np
 import math
-
+from math import floor
 
 def fibonacci(items):
     num_fibo: List[Union[int, Any]] = [0, 1]  # Basic Fibonacci sequence.
@@ -56,4 +56,11 @@ def squared_root(base, margin):
         #Debugging purposes
         print("Estimation :", estimated)
         print("SQRT :", result)'''
+
+    # Adjust result to number of decimals coherent to input margin.
+    decimals = estimated - floor(estimated)
+    print("Result with all decimals :", estimated)
+    marge = len(str(margin).split(".")[1])  # Limited to 4 decimals, to change if we want to have more precision.
+    print("Decimals to take into account :", marge)
+    estimated = round(float(estimated), marge) if len(str(estimated).split(".")[1]) > marge else estimated
     return estimated
