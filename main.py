@@ -33,7 +33,7 @@ if __name__ == '__main__':
     n = n + 1
 
     print("\n\nTEST NUMBER ", n)                # TEST 5
-    result = squared_root(121, 1)
+    result = squared_root(121, 1.0)
     print("Result ", result)
     n = n + 1
 
