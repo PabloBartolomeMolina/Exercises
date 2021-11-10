@@ -28,7 +28,7 @@ if __name__ == '__main__':
     n = n + 1
 
     print("\n\nTEST NUMBER ", n)                # TEST 4
-    result = squared_root(154689, 0.000001)
+    result = squared_root(154689, 0.001)
     print("Result ", result)
     n = n + 1
 
