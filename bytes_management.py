@@ -3,6 +3,7 @@
 import os.path
 
 
+# Check format of file
 def check_csv_format(path):
     # Check if it is possible to open the file.
     try:
@@ -31,5 +32,6 @@ def check_csv_format(path):
     return csv
 
 
+# Convert file to CSV format
 def set_csv_format(path):
     pass
