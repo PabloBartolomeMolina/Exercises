@@ -12,23 +12,22 @@ from myMath import *
 import bytes_management as bm
 import ListExercises as le
 
-
 if __name__ == '__main__':
     path = "bytes_raw.txt"
 
     print("Test case 1:")
-    le.generate_3D_list(3, 6, 4)
-    print("\n")
+    le.compare_lists([1, 2, 3], [1, 2, 3])
+    print("\n"),
     print("Test case 2:")
-    le.generate_3D_list(0, 6, 4)
+    le.compare_lists([1, 2, 3, 4], [1, 2, 3])
     print("\n")
     print("Test case 3:")
-    le.generate_3D_list(3, 0, 4)
+    le.compare_lists([1, 2, 3], [1, 2, 3, 4])
     print("\n")
     print("Test case 4:")
-    le.generate_3D_list(0, 0, 4)
+    le.compare_lists([1, 3, 3], [1, 2, 3])
     print("\n")
     print("Test case 5:")
-    le.generate_3D_list(3, 6, 0)
+    le.compare_lists([1, 2, 3], [1, 3, 3])
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
