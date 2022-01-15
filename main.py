@@ -17,6 +17,9 @@ if __name__ == '__main__':
     path = "bytes_raw.txt"
 
     le.generate_3D_list(3, 6, 4)
-
+    le.generate_3D_list(0, 6, 4)
+    le.generate_3D_list(3, 0, 4)
+    le.generate_3D_list(0, 0, 4)
+    le.generate_3D_list(3, 6, 0)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
