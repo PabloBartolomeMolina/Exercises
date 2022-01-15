@@ -4,6 +4,7 @@ import numpy as np
 import math
 from math import floor
 
+
 def fibonacci(items):
     num_fibo: List[Union[int, Any]] = [0, 1]  # Basic Fibonacci sequence.
 
