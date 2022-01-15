@@ -10,16 +10,13 @@ from psrGame import *
 from cvManips import *
 from myMath import *
 import bytes_management as bm
+import ListExercises as le
+
 
 if __name__ == '__main__':
     path = "bytes_raw.txt"
 
-    format_csv = bm.check_csv_format(path)
-
-    if not format_csv:
-        bm.set_csv_format(path)
-    else:
-        pass
+    le.generate_3D_list(3, 6, 4)
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
