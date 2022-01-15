@@ -22,3 +22,21 @@ def generate_3D_list(x: int, y: int, z: int):
     else:
         new_list = [dimB for col in range(z)]    # 3D list
     print('new_list ', new_list)
+
+
+# Compare two different lists.
+def compare_lists(list1, list2):
+    flag_discrepancy = False
+    if len(list1) != len(list2):
+        print("Lists have differenty length, they cannot be identical")
+    else:
+        length = len(list1)
+        for i in range(length):
+            if list1[i] == list2[i]:
+                pass
+            else:
+                print("Discrepancy found! Lists are not identical")
+                flag_discrepancy = True
+                break
+        if not flag_discrepancy:
+            print("Both lists are identical!!")
