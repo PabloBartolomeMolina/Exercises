@@ -28,7 +28,7 @@ def generate_3d_list(x: int, y: int, z: int):
 def compare_lists(list1, list2):
     flag_discrepancy = False
     if len(list1) != len(list2):
-        print("Lists have differenty length, they cannot be identical")
+        print("Lists have different length, they cannot be identical")
     else:
         length = len(list1)
         for i in range(length):
@@ -40,3 +40,21 @@ def compare_lists(list1, list2):
                 break
         if not flag_discrepancy:
             print("Both lists are identical!!")
+
+
+# Get the differences between two given lists
+def different_lists(list1, list2):
+    list3 = [("list1 elements", "list2 elements")]
+    if len(list1) != len(list2):
+        print("Length of first list: ", len(list1))
+        print("Length of second list: ", len(list2))
+        list3.append((list1, list2))
+    else:
+        length = len(list1)
+        for i in range(length):
+            if list1[i] == list2[i]:
+                list3.append((list1[i], list2[i]))
+            else:
+                list3.append((list1[i], list2[i]))
+
+    print(list3)
