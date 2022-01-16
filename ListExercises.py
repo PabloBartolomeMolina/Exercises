@@ -2,7 +2,7 @@
 
 
 # Generate a 3d List, with the size indicated through the parameters
-def generate_3D_list(x: int, y: int, z: int):
+def generate_3d_list(x: int, y: int, z: int):
     # 1D list case
     dimA = ['*' for col in range(x)]
     print('dimA ', dimA)
