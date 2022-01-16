@@ -53,8 +53,7 @@ def different_lists(list1, list2):
         length = len(list1)
         for i in range(length):
             if list1[i] == list2[i]:
-                list3.append((list1[i], list2[i]))
+                list3.insert(len(list3), (list1[i], list2[i]))
             else:
                 list3.append((list1[i], list2[i]))
-
     print(list3)
