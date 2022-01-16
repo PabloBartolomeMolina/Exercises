@@ -57,3 +57,18 @@ def different_lists(list1, list2):
             else:
                 list3.append((list1[i], list2[i]))
     print(list3)
+
+
+# Check if a given list is shorted or not.
+def shorted_list(input_list):
+    flagged = False
+    for i in range(len(input_list)-1):
+        if input_list[i] > input_list[i + 1]:
+            print("List is not shorted!")
+            flagged = True
+            break
+        else:
+            pass
+    if not flagged:
+        print("List is properly shorted")
+

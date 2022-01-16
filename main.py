@@ -16,23 +16,18 @@ if __name__ == '__main__':
     path = "bytes_raw.txt"
 
     print("Test case 1:")
-    le.compare_lists([1, 2, 3], [1, 2, 3])
-    le.different_lists([1, 2, 3], [1, 2, 3])
+    le.shorted_list([1, 2, 3])
     print("\n"),
     print("Test case 2:")
-    le.compare_lists([1, 2, 3, 4], [1, 2, 3])
-    le.different_lists([1, 2, 3, 4], [1, 2, 3])
+    le.shorted_list([1, 2, 3, 4])
     print("\n")
     print("Test case 3:")
-    le.compare_lists([1, 2, 3], [1, 2, 3, 4])
-    le.different_lists([1, 2, 3], [1, 2, 3, 4])
+    le.shorted_list([1, 5, 2, 3])
     print("\n")
     print("Test case 4:")
-    le.compare_lists([1, 3, 3], [1, 2, 3])
-    le.different_lists([1, 3, 3], [1, 2, 3])
+    le.shorted_list([1, 3, 0, 5, 4])
     print("\n")
     print("Test case 5:")
-    le.compare_lists([1, 2, 3], [1, 3, 3])
-    le.different_lists([1, 2, 3], [1, 3, 3])
+    le.shorted_list([1, 2, 3, 3, 5])
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
