@@ -76,9 +76,7 @@ def deg2Rad():
 
 
 def cartesian_distance(p1, p2):
-    partial0 = p2[1] - p1[1]
-    squared_partial0 = partial0*partial0
-    partial1 = p2[0] - p1[0]
-    squared_partial1 = partial1 * partial1
+    squared_partial0 = (p2[0] - p1[0]) * (p2[0] - p1[0])
+    squared_partial1 = (p2[1] - p1[1]) * (p2[1] - p1[1])
     result = sqrt(squared_partial0 + squared_partial1)
     print(result)
