@@ -3,6 +3,7 @@ from typing import List, Any, Union
 import numpy as np
 import math
 from math import floor
+from math import sqrt
 
 
 def fibonacci(items):
@@ -65,3 +66,20 @@ def squared_root(base, margin):
     print("Decimals to take into account :", marge)
     estimated = round(float(estimated), marge) if len(str(estimated).split(".")[1]) > marge else estimated
     return estimated
+
+
+def deg2Rad():
+    pi = 3.1415
+    degree = float(input("Input angle in degrees to convert to radians: "))
+    radian = degree * (pi / 180)
+    print(radian)
+
+
+
+def cartesian_distance(p1, p2):
+    partial0 = p2[1] - p1[1]
+    squared_partial0 = partial0*partial0
+    partial1 = p2[0] - p1[0]
+    squared_partial1 = partial1 * partial1
+    result = sqrt(squared_partial0 + squared_partial1)
+    print(result)
